@@ -12,7 +12,7 @@
 @font-face {
   font-family: "Roboto";
   font-weight: 900;
-  src: url(../assets/fonts/) format("woff2"), url(../assets/fonts/roboto-bold-webfont.woff) format("woff");
+  src: url(../assets/fonts/roboto-bold-webfont.woff2) format("woff2"), url(../assets/fonts/roboto-bold-webfont.woff) format("woff");
 }
 *,
 *::after,
@@ -271,17 +271,15 @@ body {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: -webkit-filter 0.3s linear, -webkit-transform 0.3s linear;
-  transition: -webkit-filter 0.3s linear, -webkit-transform 0.3s linear;
-  transition: filter 0.3s linear, transform 0.3s linear;
-  transition: filter 0.3s linear, transform 0.3s linear, -webkit-filter 0.3s linear, -webkit-transform 0.3s linear;
+  -webkit-transition: -webkit-filter 0.3s linear;
+  transition: -webkit-filter 0.3s linear;
+  transition: filter 0.3s linear;
+  transition: filter 0.3s linear, -webkit-filter 0.3s linear;
 }
 .gallery__photo img:hover {
   overflow: hidden;
   -webkit-filter: brightness(0.4);
           filter: brightness(0.4);
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
   cursor: pointer;
 }
 

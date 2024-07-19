@@ -17,7 +17,7 @@
 @font-face {
 	font-family: "Roboto";
 	font-weight: 900;
-	src: url(../assets/fonts/) format("woff2"),
+	src: url(../assets/fonts/roboto-bold-webfont.woff2) format("woff2"),
 		url(../assets/fonts/roboto-bold-webfont.woff) format("woff");
 }
 
@@ -140,8 +140,6 @@ body {
 	padding: 1.25em 5%;
 }
 
-// MAIN //
-
 // HERO //
 
 .hero {
@@ -178,6 +176,8 @@ body {
 	text-align: center;
 	z-index: 1;
 }
+
+// MAIN //
 
 // OFFER //
 
@@ -253,13 +253,12 @@ body {
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
-		transition: filter 0.3s linear, transform 0.3s linear;
+		transition: filter 0.3s linear;
 	}
 
 	&__photo img:hover {
 		overflow: hidden;
 		filter: brightness(0.4);
-		transform: scale(1.03);
 		cursor: pointer;
 	}
 }
